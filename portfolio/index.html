@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jagilinki Hemasundar — Fresher DevOps Engineer & Cloud Enthusiast. Portfolio showcasing skills in Docker, Kubernetes, AWS, and CI/CD." />
+  <title>Hemasundar · DevOps Engineer</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ░░ FLOATING SOCIAL ICONS ░░ -->
+  <div class="social-float" aria-label="Social links">
+    <a href="mailto:jagilinkihemasundar333@gmail.com" title="Email" class="social-float__icon"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/Hemasundar123" target="_blank" rel="noopener" title="GitHub" class="social-float__icon"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jagilinki-hemasundar-420722266/" target="_blank" rel="noopener" title="LinkedIn" class="social-float__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__brand">
+      <span class="navbar__logo">HS<span class="dot">.</span></span>
+    </div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar__links" id="navLinks" role="list">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+      <i class="fa-solid fa-sun" id="themeIcon"></i>
+    </button>
+  </nav>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 1 — HERO          ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="hero" id="home" aria-label="Hero section">
+
+    <!-- Animated grid background -->
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <!-- Glowing orbs -->
+    <div class="orb orb--1" aria-hidden="true"></div>
+    <div class="orb orb--2" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+
+      <h1 class="hero__name reveal reveal--delay-1">
+        Jagilinki<br /><em>Hemasundar</em>
+      </h1>
+
+      <div class="hero__role reveal reveal--delay-2">
+        <span class="role-static">Fresher </span>
+        <span class="role-typed" id="typedRole"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero__tagline reveal reveal--delay-3">
+        Turning infrastructure chaos into elegant pipelines —<br />
+        one commit at a time.
+      </p>
+
+      <div class="hero__cta reveal reveal--delay-4">
+        <a href="assets/file.pdf" download class="btn btn--primary">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn--ghost">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Floating tech badges -->
+    <div class="hero__badges" aria-hidden="true">
+      <span class="tech-badge" style="--delay:0s">Docker</span>
+      <span class="tech-badge" style="--delay:0.3s">Kubernetes</span>
+      <span class="tech-badge" style="--delay:0.6s">AWS</span>
+      <span class="tech-badge" style="--delay:0.9s">Jenkins</span>
+      <span class="tech-badge" style="--delay:1.2s">Terraform</span>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 2 — ABOUT         ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="about section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">01 — About</span>
+        <h2 id="about-heading" class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__visual reveal reveal--left">
+          <div class="about__avatar">
+            <!-- Placeholder avatar with initials -->
+            <div class="avatar-initials">HS</div>
+            <div class="avatar-ring avatar-ring--1"></div>
+            <div class="avatar-ring avatar-ring--2"></div>
+          </div>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2</span>
+              <span class="stat-label">AWS Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Tools Mastered</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__text reveal reveal--right">
+          <p class="about__intro">
+            I'm a passionate <strong>fresher DevOps & Backend Developer</strong> with a deep curiosity for cloud infrastructure, automation, and building systems that scale beautifully.
+          </p>
+          <p>
+            My journey started with a fascination for how software gets from a developer's laptop to millions of users. That question led me down the rabbit hole of CI/CD pipelines, containerization, and cloud-native architectures.
+          </p>
+          <p>
+            I believe in <em>infrastructure as code</em>, automation-first thinking, and the idea that the best systems are the ones nobody notices because they just work.
+          </p>
+
+          <div class="about__goals">
+            <h3>Career Goals</h3>
+            <ul class="goals-list">
+              <li><i class="fa-solid fa-check-circle"></i> Land a role in DevOps / Cloud Engineering</li>
+              <li><i class="fa-solid fa-check-circle"></i> Contribute to open-source infrastructure tools</li>
+              <li><i class="fa-solid fa-check-circle"></i> Achieve AWS Solutions Architect Professional</li>
+              <li><i class="fa-solid fa-check-circle"></i> Build self-healing, automated cloud systems</li>
+            </ul>
+          </div>
+
+          <div class="about__actions">
+            <a href="#contact" class="btn btn--primary">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 3 — SKILLS        ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="skills section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">02 — Skills</span>
+        <h2 id="skills-heading" class="section-title">What I Work With</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <!-- Category 1 -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category reveal reveal--delay-1">
+          <div class="skill-category__header">
+            <i class="fa-solid fa-box"></i>
+            <h3>Containers & Orchestration</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--accent"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="skill-pill skill-pill--accent">☸ Kubernetes</span>
+            <span class="skill-pill">Helm</span>
+          </div>
+          <!-- Skill bars -->
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Docker</span><span>85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Kubernetes</span><span>70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category reveal reveal--delay-2">
+          <div class="skill-category__header">
+            <i class="fa-brands fa-aws"></i>
+            <h3>Cloud & CI/CD</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--aws">AWS</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">Jenkins</span>
+            <span class="skill-pill">ArgoCD</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>AWS</span><span>75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Jenkins</span><span>80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category reveal reveal--delay-3">
+          <div class="skill-category__header">
+            <i class="fa-solid fa-gear"></i>
+            <h3>IaC & Automation</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">Ansible</span>
+            <span class="skill-pill">Bash</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Terraform</span><span>72%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Ansible</span><span>68%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="68"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <i class="fa-brands fa-git-alt"></i>
+            <h3>Version Control & Misc</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Nginx</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 4 — PROJECTS      ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="projects section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">03 — Projects</span>
+        <h2 id="projects-heading" class="section-title">Things I've Built</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" aria-label="Project: CI/CD Pipeline Automation">
+          <div class="project-card__header">
+            <div class="project-card__icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <div class="project-card__links">
+              <a href="https://github.com/Hemasundar123/online_shopping_app" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <span class="project-card__tag">Featured</span>
+          <h3 class="project-card__title">CI/CD Pipeline Automation</h3>
+          <p class="project-card__desc">
+            Built a full end-to-end CI/CD pipeline using Jenkins and GitHub Actions. Automates code testing, Docker image building, and deployment to a Kubernetes cluster on AWS EKS — reducing deployment time by 60%.
+          </p>
+          <div class="project-card__tools">
+            <span>Jenkins</span>
+            <span>GitHub Actions</span>
+            <span>Docker</span>
+            <span>AWS EKS</span>
+            <span>Bash</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal reveal--delay-2" aria-label="Project: Kubernetes Deployment">
+          <div class="project-card__header">
+            <div class="project-card__icon">☸</div>
+            <div class="project-card__links">
+              <a href="https://github.com/Hemasundar123/Docker-and-k8s-SimpleApp" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Kubernetes Microservices Deployment</h3>
+          <p class="project-card__desc">
+            Deployed a 3-tier microservices application on Kubernetes (Minikube). Wrote Helm charts for templated deployments, configured HPA for auto-scaling, and implemented rolling updates with zero downtime.
+          </p>
+          <div class="project-card__tools">
+            <span>Kubernetes</span>
+            <span>Helm</span>
+            <span>Minikube</span>
+            <span>YAML</span>
+            <span>HPA</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal reveal--delay-3" aria-label="Project: AWS Automation Scripts">
+          <div class="project-card__header">
+            <div class="project-card__icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="project-card__links">
+              <a href="https://github.com/Hemasundar123/Terraform-Ansible" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">AWS Infrastructure Automation</h3>
+          <p class="project-card__desc">
+            Automated provisioning of AWS infrastructure (EC2, S3, VPC) using Terraform. Includes reusable modules, remote state management with S3 backend, and environment-specific variable files for dev.
+          </p>
+          <div class="project-card__tools">
+            <span>Terraform</span>
+            <span>AWS EC2</span>
+            <span>S3</span>
+            <span>VPC</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 5 — CERTIFICATIONS░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="certifications section" id="certifications" aria-labelledby="certs-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">04 — Certifications</span>
+        <h2 id="certs-heading" class="section-title">AWS Certified</h2>
+      </div>
+
+      <div class="certs__grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-card__badge">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+          <div class="cert-card__body">
+            <span class="cert-card__level">Foundational</span>
+            <h3 class="cert-card__title">AWS Cloud Practitioner</h3>
+            <p class="cert-card__issuer">Amazon Web Services · 2025</p>
+            <p class="cert-card__desc">Validates foundational AWS cloud knowledge — core services, billing, security, and the AWS shared responsibility model.</p>
+            <div class="cert-card__tags">
+              <span>Cloud Fundamentals</span>
+              <span>IAM</span>
+              <span>EC2 · S3</span>
+            </div>
+          </div>
+          <div class="cert-card__badge-ribbon">CLF-C02</div>
+        </div>
+
+        <div class="cert-card cert-card--gold reveal reveal--delay-1">
+          <div class="cert-card__badge">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+          <div class="cert-card__body">
+            <span class="cert-card__level">Associate</span>
+            <h3 class="cert-card__title">AWS Solutions Architect</h3>
+            <p class="cert-card__issuer">Forge · 2025</p>
+            <p class="cert-card__desc">Demonstrates ability to design distributed systems on AWS — focusing on high availability, cost optimization, and well-architected frameworks.</p>
+            <div class="cert-card__tags">
+              <span>VPC · RDS</span>
+              <span>Auto Scaling</span>
+              <span>ELB · CloudFront</span>
+            </div>
+          </div>
+          <div class="cert-card__badge-ribbon">SAA-C03</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 6 — CONTACT       ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="contact section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">05 — Contact</span>
+        <h2 id="contact-heading" class="section-title">Let's Build Together</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal reveal--left">
+          <p class="contact__tagline">
+            I'm actively looking for my first DevOps / Cloud role. If you have an opportunity, a project, or just want to talk tech — my inbox is always open.
+          </p>
+
+          <ul class="contact__links" role="list">
+            <li>
+              <a href="mailto:jagilinkihemasundar333@gmail.com" class="contact__link">
+                <span class="contact__link-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <span class="contact__link-label">Email</span>
+                  <span class="contact__link-value">jagilinkihemasundar333@gmail.com</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Hemasundar123" target="_blank" rel="noopener" class="contact__link">
+                <span class="contact__link-icon"><i class="fa-brands fa-github"></i></span>
+                <div>
+                  <span class="contact__link-label">GitHub</span>
+                  <span class="contact__link-value">github.com/Hemasundar123</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jagilinki-hemasundar-420722266/" target="_blank" rel="noopener" class="contact__link">
+                <span class="contact__link-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                <div>
+                  <span class="contact__link-label">LinkedIn</span>
+                  <span class="contact__link-value">linkedin.com/in/jagilinki-hemasundar-420722266/</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap reveal reveal--right">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required autocomplete="email" />
+                <span class="form-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" required />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity…" required></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn-text">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+              <span class="btn-loading" aria-hidden="true" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending…</span>
+            </button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" style="display:none;">
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">HS<span class="dot">.</span></span>
+        <p class="footer__copy">Crafted with ☕ &amp; curiosity by Jagilinki Hemasundar · 2025</p>
+        <a href="#home" class="footer__back" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
